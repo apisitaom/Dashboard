@@ -13,9 +13,6 @@ import {
 
 export default function Home(props) {
     const [loading, SetLoading] = useState(false);
-    const [tab, SetTab] = useState("1");
-
-    const handleChange = (e, value) => SetTab(value);
 
     return (
         loading ? (<SkeltonLoading />)
