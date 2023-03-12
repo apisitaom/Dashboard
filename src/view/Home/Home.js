@@ -45,6 +45,26 @@ export default function Home(props) {
                     <Button color='primary' style={{ borderRadius: 20 }} variant="contained">Your Analysis / Analysis</Button>
                 </Container>
             </Grid>
+            {/* Chart */}
+            <Grid style={{ paddingTop: "2.5%" }} item xs={12}>
+                <Container style={{ justifyContent: "center", display: "flex", paddingTop: "1%" }}>
+                    <Grid item xs={4}>
+                        <Container style={{ justifyContent: "center", display: "flex", paddingTop: "1%" }}>
+                            <Typography style={{ paddingLeft: "7%" }} variant="subtitle1" display="block" gutterBottom> Chart </Typography>
+                        </Container>
+                    </Grid>
+                    <Grid item xs={4}>
+                        <Container style={{ justifyContent: "center", display: "flex", paddingTop: "1%" }}>
+                            <Typography style={{ paddingLeft: "7%" }} variant="subtitle1" display="block" gutterBottom> Chart Statistic </Typography>
+                        </Container>
+                        </Grid>
+                    <Grid item xs={4}>
+                        <Container style={{ justifyContent: "center", display: "flex", paddingTop: "1%" }}>
+                            <Typography style={{ paddingLeft: "7%" }} variant="subtitle1" display="block" gutterBottom> Card </Typography>
+                        </Container>
+                    </Grid>
+                </Container>
+            </Grid>
             </>
         </React.Fragment>
     )
