@@ -36,10 +36,10 @@ export default function Home(props) {
             {/* Content */}
             <Grid item xs={12}>
                 <Container style={{ justifyContent: "center", display: "flex", paddingTop: "3%" }}>
-                    <Typography variant="h3" display="block"> Take Control Profolio </Typography>
+                    <Typography variant="h3" display="block"> Take Control Your Port </Typography>
                 </Container>
                 <Container style={{ justifyContent: "center", display: "flex", paddingTop: "1%" }}>
-                    <Typography variant="h3" display="block"> Statistic Viper Dashboard page </Typography>
+                    <Typography variant="h3" display="block"> Statistic Viper Dashboard Page </Typography>
                 </Container>
                 <Container style={{ justifyContent: "center", display: "flex", paddingTop: "3%" }}>
                     <Button color='primary' style={{ borderRadius: 20 }} variant="contained">Your Analysis / Analysis</Button>
