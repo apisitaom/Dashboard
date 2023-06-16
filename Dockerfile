@@ -13,7 +13,7 @@ RUN npm install -s
 # RUN npm ci --only=production
 
 # Bundle app source
-COPY . .
+COPY . .    
 
 EXPOSE 9000
 CMD [ "npm", "start" ]
