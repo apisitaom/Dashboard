@@ -24,7 +24,6 @@ const en = {
   },
   /* Sweet Alert */ 
   alert: {
-    
   },
   entities: {
     login: {
@@ -35,6 +34,9 @@ const en = {
       }
     },
     /* NEW HERE */
+    color: {
+      gray: "gray"
+    }
   }
 };
 
