@@ -1,4 +1,4 @@
-FROM node:12-alpine
+FROM node:14-alpine
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -15,9 +15,9 @@ RUN npm install -s
 # Bundle app source
 COPY . .    
 
-EXPOSE 9000
+EXPOSE 5000
 CMD [ "npm", "start" ]
 
 # *** STEP
 # docker build -t <your-image-name> .
-# docker run -p 9000:3000 -d <your-image-name>
+# docker run -p 5000:3000 -d <your-image-name>
