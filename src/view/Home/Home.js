@@ -20,14 +20,9 @@ import animeTownImg from '../../images/animeTown.PNG';
 
 export default function Home(props) {
     const [loading, SetLoading] = useState(false);
-    const windowWidth = useRef(window.innerWidth);
-    const windowHeight = useRef(window.innerHeight);
-    console.log('windowWidth', windowWidth)
-    console.log('windowHeight', windowHeight)
 
-    const widthFooterImg = windowWidth / 4;
-    const heightFooterImg = windowHeight / 2.5;
-
+    let widthFooterImg = (window.innerWidth / 4);
+    let heightFooterImg = (window.innerHeight / 2.5);
     return (
         loading ? (<SkeltonLoading />)
             :
@@ -159,12 +154,10 @@ export default function Home(props) {
                         <Grid item xs={12}>
                             <Container style={{ justifyContent: "center", display: "flex", paddingTop: "1%" }}>
                                 <Grid xs={4}>
-                                    <div style={{ width: 100, height: 100 }}>
-                                        <img
-                                            style={{ width: widthFooterImg, height: heightFooterImg, margin: "1.5%", borderRadius: 15 }}
-                                            src={animeForestImg}
-                                            alt='animeForest' />
-                                    </div>
+                                    <img
+                                        style={{ width: widthFooterImg, height: heightFooterImg, margin: "1.5%", borderRadius: 15 }}
+                                        src={animeForestImg}
+                                        alt='animeForest' />
                                 </Grid>
                                 <Grid xs={4}>
                                     <img
