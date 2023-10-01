@@ -17,6 +17,8 @@ import { i18n } from '../../i18n/index';
 import animeForestImg from '../../images/animeForest.PNG';
 import animeKongVSGodImg from '../../images/animeKongVSGod.PNG';
 import animeTownImg from '../../images/animeTown.PNG';
+import PieChart from './Chart/PieChart';
+import StatisticChart from './Chart/RadarChart';
 
 export default function Home(props) {
     const [loading, SetLoading] = useState(false);
@@ -60,13 +62,13 @@ export default function Home(props) {
                             {/* Chat 1 */}
                             <Grid item xs={4}>
                                 <Container style={{ justifyContent: "center", display: "flex", paddingTop: "1%" }}>
-                                    <Typography style={{ paddingLeft: "7%" }} variant="subtitle1" display="block" gutterBottom> Chart </Typography>
+                                    <StatisticChart />
                                 </Container>
                             </Grid>
                             {/* Chat 2 */}
                             <Grid item xs={4}>
                                 <Container style={{ justifyContent: "center", display: "flex", paddingTop: "1%" }}>
-                                    <Typography style={{ paddingLeft: "7%" }} variant="subtitle1" display="block" gutterBottom> Chart Statistic </Typography>
+                                    <PieChart />
                                 </Container>
                             </Grid>
                             {/* Chat 3 */}
